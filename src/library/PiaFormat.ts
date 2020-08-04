@@ -298,7 +298,7 @@ const oasdiEarningsSerializer: PIASerializer = new (class {
       ...line6,
       //...line7,
       //...line8,
-      ...line20,
+      ...(data.typeOfEarnings && line20),
       //...line21,
       ...line22to29,
     };
