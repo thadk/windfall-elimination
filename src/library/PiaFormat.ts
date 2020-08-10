@@ -768,6 +768,7 @@ interface PIAData {
   piaEverythingElse?: string;
 }
 
+//Getter Setter Interface
 interface PIADataAdapter {
   getSSN(): string | undefined;
   setSSN(value: string | undefined): void;
@@ -858,6 +859,7 @@ function initializePiaData(): PIAData & PIADataAdapter {
     pastProjectionStubString: undefined,
     futureProjectionStubString: undefined,
     piaEverythingElse: undefined,
+
     getSSN() {
       return this.ssn;
     },
