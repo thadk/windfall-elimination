@@ -877,7 +877,7 @@ export class PiaFormat {
     const lines = piaInput.split("\n");
     this.piaData = deserializePiaData(lines);
   }
-
+  //TODO - getters and setters for retire date, birthdate and earnings.
   outputPia() {
     var linesRecords = serializePiaData(this.piaData);
     const lines = Object.entries(linesRecords)
