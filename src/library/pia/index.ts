@@ -23,7 +23,7 @@ export async function finalCalculation(
     yearsSubstantialEarnings: 0,
     pensionNonCoveredMonthly: 0,
     aime: 0,
-    fullRetireDate: new Date("1900-1-1").toDateString(),
+    fullRetireDate: new Date("1900-1-1").toLocaleDateString("en-US"),
   };
 
   return userProfile;
