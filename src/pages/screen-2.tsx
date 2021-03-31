@@ -54,6 +54,10 @@ const Text = styled.div`
   font-size: ${fontSizes[1]};
 `;
 
+const GlosssaryContainer = styled.div`
+  margin-left: 20px
+`;
+
 interface Screen2Props {
   userState: UserState;
   userStateActions: UserStateActions;
@@ -383,8 +387,7 @@ export class Screen2 extends React.Component<Screen2Props, Screen2State> {
               ) : null}
               </LeaveGutterAtRight>
               {preferPiaUserCalc && (
-                <React.Fragment>
-                   <div></div>
+                <GlosssaryContainer>
                   <Glossary
                     title="Detailed Calculator"
                     link="https://www.ssa.gov/oact/anypia/anypia.html"
@@ -392,7 +395,7 @@ export class Screen2 extends React.Component<Screen2Props, Screen2State> {
                   >
                     {userProfile.calculatorApp?.Description}
                   </Glossary>
-                  </React.Fragment>
+                 </GlosssaryContainer>
               )}
                               </CardGlossaryContainer>
 
